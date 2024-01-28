@@ -1,0 +1,29 @@
+Algorithm AnalyzeSentence(sentence):
+    // Initialize counters
+    length Counter = 0
+    word Counter = 0
+    vowel Counter = 0
+
+    // Define vowels
+    vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
+
+    // Iterate through each character in the sentence
+    for each character in sentence:
+        // Increment length counter for each character
+         length Counter = length Counter + 1
+
+        // Check if the character is a space to count words
+        if character is a space:
+            wordCounter = wordCounter + 1
+
+        // Check if the character is a vowel
+        if character is in vowels:
+            vowelCounter = vowelCounter + 1
+
+    // The last character is a point, so it is not included in word count
+    word Counter = word Counter + 1
+
+    // Display the results
+    Output "Length of the sentence:", length Counter
+    Output "Number of words in the sentence:", word Counter
+    Output "Number of vowels in the sentence:", vowel Counter
